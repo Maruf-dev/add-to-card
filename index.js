@@ -40,7 +40,7 @@ onValue(shoppingListInDB, function(snapshot){
         }
 
     } else{
-        shoppingListEl.innerHTML = "Hali yozuv yozilmadi..."
+        shoppingListEl.innerHTML = "SMS yozsa ham bo'ladi..."
 
     }
 
