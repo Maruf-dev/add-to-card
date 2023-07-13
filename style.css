@@ -1,0 +1,129 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+html,body{
+    font-family: 'Rusbic',sans-serif;
+    background-color:#eef0f4;
+    color: #432000;
+    user-select: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+}
+img{
+    width: 150px;
+    margin: 0 auto;
+}
+input{
+    color: #432000;
+    background-color: #DCE1EB;
+    border: 0;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+
+}
+
+button{
+    color: #fdfdfd;
+    background-color: #ac485a;
+    border: 0;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+button:hover{
+    background-color: #432000;
+    cursor: pointer;
+}
+
+ul{
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+ul li{
+    background-color: #fffdf8;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+ul li:hover{
+    background-color: #ffecc7;
+    cursor:pointer;
+}
