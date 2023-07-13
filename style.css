@@ -103,6 +103,11 @@ button:hover{
     background-color: #432000;
     cursor: pointer;
 }
+.alert{
+    padding: 10px;
+    background-color: yellow;
+    display: block;
+  }
 
 ul{
     margin-top: 10px;
