@@ -19,9 +19,18 @@ const shoppingListEl = document.getElementById("shopping-list");
 addButtonEl.addEventListener("click", function(){
     let inputValue = inputFieldEl.value
 
-    push(shoppingListInDB, inputValue)
+    if (inputValue === "" || inputValue === " "){
 
-    clearInputFieldEl()
+        alert("bo'sh habar jo'natib bo'lmaydi");
+
+    }else{
+
+        push(shoppingListInDB, inputValue);
+
+        clearInputFieldEl();
+
+    }
+    
 
 })
 
